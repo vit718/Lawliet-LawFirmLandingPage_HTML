@@ -1,0 +1,14 @@
+@import "../abstracts/variables";
+@import "../mixins/mix_button";
+
+
+//                         (bg_color, border)
+.btn_1{
+    @include master_button($red, $green);
+}
+.btn_2{
+    @include master_button($blue, $black);
+}
+.btn_3{
+    @include master_button($white, $grey);
+}
