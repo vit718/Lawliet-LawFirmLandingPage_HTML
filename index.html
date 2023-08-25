@@ -3,19 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONT  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@700;900&family=Plus+Jakarta+Sans:wght@400;500&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- FONT AWESOME  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <!-- MY EXTERNAL CSS  -->
     <link rel="stylesheet" href="./assets/styles/style.css">
     <title>Home_page</title>
 </head>
 <body>
-    <div class="temp">
-        <h1 class="temp_heading">
-            Fi_Amanillah
-        </h1>
-        <h3 class="temp_subheading">
-            In the custody of Allah.
-        </h3>
-        <p>HTML Boiler Plate with full set up (scss, sass, postcss etc.) editable to begin a project.</p>
+    <div class="page_body">
+        <!-- HIDDEN NAVBAR  -->
+
+            <div id="nav_bar" class="">
+                <ul class="nav_list">
+
+                    <a id="nav_close_mark" class="" href="#"><i onclick="nav_bar.classList.remove('active_nav')"  class="fa-solid fa-xmark"></i></a>
+
+                    <li><a href="#">contact</a></li>
+                    <li><a href="#">testimonial</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">terms</a></li>
+  
+                </ul>
+            </div>
+
+        <header>
+            <div class="header_box">
+                <div class="header_logo">
+                    <img src="./assets/images/header_icon_ovall.png" alt="header_logo">
+                    <h3>Lawliet</h3>
+                </div>
+                <nav class="header_nav">
+                    <ul class="nav_list">
+                        <li><a href="#">contact</a></li>
+                        <li><a href="#">testimonial</a></li>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">terms</a></li>
+                        
+                        
+                    </ul>
+                </nav>
+                <div class="header_search_bar">
+                    <!-- <img src="./assets/images/header_search_outline.png" alt="search-outline"> -->
+        
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+                <!-- HIDDEN NAV ICON  -->
+                <div class="nav_icon">
+                    <a href="#"><i onclick="nav_bar.classList.add('active_nav')" class="fa-solid fa-ellipsis-vertical"></i></a>
+                </div>
+            </div>
+        </header>
+
+        <br>
+
+        <header>
+            <div class="header_box2">
+                <div class="header_logo2">
+                    <img src="./assets/images/header_icon_ovall.png" alt="header_logo">
+                    <h3>Lawliet</h3>
+                </div>
+                <nav class="header_nav2">
+                    <ul class="nav_list">
+                        <li><a href="#">contact</a></li>
+                        <li><a href="#">testimonial</a></li>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">terms</a></li>
+                        
+                        
+                    </ul>
+                </nav>
+                <div class="header_search_bar2">
+                    <!-- <img src="./assets/images/header_search_outline.png" alt="search-outline"> -->
+        
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+            </div>
+        </header>
+        
+        <section id="banner_id" class="banner_sec">
+            <div class="banner_div container">
+                <div class="left_info_div">
+                    <div class="news_div">
+                        <a href="#">New</a>
+                        <p class="news_p">Stay connected to the upcoming & Recent jobs</p>
+                    </div>
+
+                    <h1 class="slogan">
+                        Your Solution Legal Consultacy
+                    </h1>
+                    <p class="des_p">
+                        We are here to help you take care of your legality with the best service especially for you.
+                    </p>
+                    <a class="get_start_button" href="#"><p>get started</p> </a>
+
+                    <h4 class="testimonial_pararaph">
+                        Trusted by 10+ companies in indonesia
+                    </h4>
+
+                    <div class="company_logo_div">
+                        <ul>
+                            <li><img src="./assets/images/Airbnb_logo.png" alt="Airbnb_logo"></li>
+
+                            <li><img src="./assets/images/Hubspot_Logo.png" alt="Hubspot_Logo"></li>
+
+                            <li><img src="./assets/images/Microsoft_Logo.png" alt="Microsoft_Logo"></li>
+
+                            <li><img src="./assets/images/Google_Logo.png" alt="Google_Logo"></li>
+                            
+                        </ul>
+                        
+                        
+                        
+                    </div>
+
+                    <div class="big_ellipse">
+
+                    </div>
+                    <div class="small_ellipse">
+
+                    </div>
+                    <div class="photo_div">
+                        <img src="./assets/images/banner_image_lawyer.png" alt="lawyer-image-banner">
+                        <div class="lawyer_info">
+                            <h2 class="lawyer_name">
+                                Tiara Andini
+                            </h2>                            
+                            <p class="designation">
+                                -Lawyer
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            
+            </div>
+        </section>
+
+       
 
     </div>
+
 </body>
 </html>

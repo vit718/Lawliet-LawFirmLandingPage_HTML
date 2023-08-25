@@ -1,37 +1,48 @@
+@import "../layouts/reset";
 @import '../abstracts/variables';
 @import '../mixins/common_mix';
 @import '../mixins/responsive';
-@import '../mixins/font_mix';
+
 
 header{
 
-    .header_box{
+    .header_box2{
         border:$border;
-        position: relative;
+        display: none;
+        justify-content: space-between;
         width: 1110px;
         height: 100px;
         margin: auto;
+        padding: 0 20px 0 7px;
+
+        
 
         @include custom_responsive(320px, 1399.9px){
             width: 85vw;
         }
 
-        .header_logo{
-        @include border();
 
-            position: absolute;
-            left: 7px;
-            top: 50%;
-            transform: translateY(-50%);
+        .header_logo2{
+        @include border();
+            height: 36px;
+            width: 144px;
             display: flex;
             flex-shrink: 0px;
             gap: 15px;
+            margin: auto 0;
+            
+            @include custom_responsive(320px, 991px){
+                margin-right: 20px;
+            }
+            
+            
 
             
 
             img{
-                width: 36px;
-                height: 36px;
+                width: auto;
+                max-height: 100%;
+                
                 
             }
 
@@ -50,24 +61,27 @@ header{
 
         }
 
-        .header_nav{
+        .header_nav2{
             border: $border;
-            position: absolute;
-            left: 488px;
-            top: 50%;
-            transform: translateY(-50%);
+            height: 47px;
+            width: 447px;
+            margin: auto 0;
+            flex: 1;
+            justify-content: flex-end;
+
+            // &:nth-child(2){
+            //    margin-left: auto ;
+            // }
+
 
             @include custom_responsive(576px, 1399.9px){
-                left: 60%;
-                transform: translateX(-50%) translateY(-50%);
                 
-            }
-            @include custom_responsive(0px,767.9px){
-                display: none;
+                
             }
 
             ul{
                 display: flex;
+                justify-content: flex-end;
                 gap: 56px;
                 padding: 12px;
 
@@ -76,7 +90,7 @@ header{
                 }
 
                 li{
-                    list-style-type: none;                  
+                    list-style-type: none;
                     text-transform: uppercase;         
 
                     a{
@@ -90,25 +104,23 @@ header{
                         // font-weight: 400;
                         line-height: 23px;
                         letter-spacing: 1.5px;
-                       
                     }
                 }
             }
         }
 
-        .header_search_bar{
+        .header_search_bar2{
             border: $border;
-            position: absolute;
-            right: 20px;
-            top: 50%;
-            transform: translateY(-50%);
+            height: 24px;
+            width: 24px;
+            margin: auto 0px auto 131px ;
+
+            @include custom_responsive(320px, 991px){
+                margin: auto 0 auto 5vw;
+            }
+
             
-            @include xs(){
-            right: 70px;
-            }
-            @include sm(){
-            right: 70px;
-            }
+            // margin-left: 38px 20px 38px 131px;
 
             a{
                 height: 24px;
@@ -119,10 +131,5 @@ header{
                 }
             }
         }
-
-        
     }
 }
-
-
-

@@ -1,0 +1,12 @@
+@import '../abstracts/variables';
+@import '../mixins/common_mix';
+@import '../mixins/responsive';
+
+@mixin font($cl,$fm,$sz,$stl,$wt){
+
+    color: $cl;
+    font-family: $fm;
+    font-size: $sz;
+    font-style: $stl;
+    font-weight: $wt;
+}
