@@ -13,7 +13,7 @@
         
 
         .left_info_div{
-                @include border(green);
+                // @include border(green);
 
                 @include custom_responsive(0px, 991.9px){
                     
@@ -129,7 +129,7 @@
                 }
             }
             .company_logo_div{
-                @include border(green);
+                // @include border(green);
                 margin-top: 34px;
                 margin-bottom: 40px;
                 height: 88px;

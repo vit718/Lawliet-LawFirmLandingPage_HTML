@@ -17,13 +17,14 @@
 @import './layouts/nav_button';
 
 body{
-    background-color: #a4a4a4;
+    background-color: $ellipse;
     height: auto;
     
 }
 
 .page_body{
-    @include border(pink);
+    // @include border(pink);
+    background-color: $white;
     width: 1440px;
     margin: auto;
     overflow: hidden;

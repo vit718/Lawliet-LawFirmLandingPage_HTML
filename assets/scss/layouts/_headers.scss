@@ -6,7 +6,7 @@
 header{
 
     .header_box{
-        border:$border;
+        // border:$border;
         position: relative;
         width: 1110px;
         height: 100px;
@@ -17,7 +17,7 @@ header{
         }
 
         .header_logo{
-        @include border();
+        // @include border();
 
             position: absolute;
             left: 7px;
@@ -51,7 +51,7 @@ header{
         }
 
         .header_nav{
-            border: $border;
+            // border: $border;
             position: absolute;
             left: 488px;
             top: 50%;
@@ -97,7 +97,7 @@ header{
         }
 
         .header_search_bar{
-            border: $border;
+            // border: $border;
             position: absolute;
             right: 20px;
             top: 50%;

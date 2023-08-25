@@ -6,7 +6,7 @@
     width: 1110px;
     height: auto;
     margin: auto;
-    @include border(black);
+    // @include border(black);
 
     @include custom_responsive(320px, 1399.9px){
         width: 85vw;
