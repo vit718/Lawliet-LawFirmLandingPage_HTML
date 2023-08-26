@@ -147,10 +147,13 @@
                     gap: 33px;
 
                     li{
-                        img{
-                            width: auto;
-                            height: 26px;
-                            flex-shrink: 0;
+                        a{
+
+                            img{
+                                width: auto;
+                                height: 26px;
+                                flex-shrink: 0;
+                            }
                         }
 
 
@@ -200,9 +203,11 @@
                 }
 
                 img{
+                    
 
                     @include custom_responsive(0px, 991.9px){
                         width: 40vw;
+
                     }
                 }
 

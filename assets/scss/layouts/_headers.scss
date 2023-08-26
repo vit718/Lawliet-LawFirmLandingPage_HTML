@@ -56,6 +56,7 @@ header{
             left: 488px;
             top: 50%;
             transform: translateY(-50%);
+            z-index: 555;
 
             @include custom_responsive(576px, 1399.9px){
                 left: 60%;
@@ -102,6 +103,7 @@ header{
             right: 20px;
             top: 50%;
             transform: translateY(-50%);
+            z-index: 555;
             
             @include xs(){
             right: 70px;
