@@ -16,6 +16,11 @@ header{
             width: 85vw;
         }
 
+        body.dark & {
+            background-color: $black;
+            color: $white;
+        }
+
         .header_logo{
         // @include border();
 
@@ -33,6 +38,9 @@ header{
                 width: 36px;
                 height: 36px;
                 
+                body.dark & {  
+                    filter: invert(100%);
+                }
             }
 
             h3{
@@ -46,8 +54,36 @@ header{
                 // font-weight: 700;
                 line-height: 35px;
                 letter-spacing: 1.5px;
+
+                body.dark & {  
+                    color: $white;
+                }
             }
 
+        }
+
+        .change_button{
+
+                    position: absolute;
+                    left: 150px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    border-radius: 26.5px;
+                    background-color: $brand_deep;
+                    width: 150px;
+                    height: 28px;
+                    display: flex;
+                    text-align: center;
+                    justify-content: center;                
+                    color: $white;
+
+                    @include custom_responsive(0px, 991.9px){
+                    height:22px ;
+                    font-size: 14px;
+                    left: 10px;
+                    top: 2px;
+                    transform: translateY(0%);                  
+                    }
         }
 
         .header_nav{
@@ -92,6 +128,9 @@ header{
                         line-height: 23px;
                         letter-spacing: 1.5px;
                        
+                        body.dark & {  
+                            color: $white;
+                        }
                     }
                 }
             }
@@ -118,6 +157,10 @@ header{
                 i{
                     font-size: 24px;
                     color: $heading_text;
+
+                    body.dark & {  
+                    color: $white;
+                    }
                 }
             }
         }

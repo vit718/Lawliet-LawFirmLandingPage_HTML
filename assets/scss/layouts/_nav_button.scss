@@ -3,21 +3,27 @@
 @import '../mixins/responsive';
 
 #nav_bar {
+
+    
+    display: none;
     position: absolute;
-    right: 25px;
+    right: -250px;
     top: 22px;
     height: 400px;
     width: 200px;
-    transform: scale(0);
+    // transform: scale(0);
     border-radius: 10px;
     background-color: rgba(9, 75, 114, 0.591);
-    z-index: 999;
     backdrop-filter: blur(10px);
-    transition: transform 0.4s ease-in-out;
+    transition-duration: right 0.4s;
+    z-index: 999;
+
+    @include custom_responsive(0px, 768px){
+        display: block;
+    }
 
     &.active_nav {
-        right: 25px;
-        transform: scale(1);
+        right: 15px;
     }
 
     #nav_close_mark {
@@ -55,6 +61,8 @@
         transform: translateY(-50%);
         right: 30px;
 
+        
+
         @include xs() {
             display: inline-block;
             position: absolute;
@@ -74,6 +82,10 @@
             i {
                 font-size: 24px;
                 color: $brand_deep;
+
+                body.dark & {  
+                    color: $white;
+                }
             }
         }
     }

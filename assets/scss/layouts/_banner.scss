@@ -75,7 +75,7 @@
                 
                 @include custom_responsive(0px, 767.9px){
                     width: unset;
-                    font-size: 40px;
+                    font-size: 30px;
                     line-height:40px;
                     height: auto;
                     // margin-bottom: 70px;
@@ -103,7 +103,7 @@
 
                 @include custom_responsive(0px, 767.9px){
                     width: unset;
-                    font-size: 25px;
+                    font-size: 18px;
                     // margin-top: 0;
 
                     // line-height:60px;
@@ -127,6 +127,11 @@
                 align-items: center;
                 justify-content: center;
 
+                @include custom_responsive(0px, 767.9px){
+                    height: 40px;
+                    width: 150px;
+                }
+
                 @include custom_responsive( 991px, 1300px){
                     margin-top: 80px;
 
@@ -139,6 +144,10 @@
                     line-height: 22.48px;
                     letter-spacing: 1.28px;
                     text-transform: uppercase;
+
+                    @include custom_responsive(0px, 767.9px){
+                        font-size: 12px;
+                    }
                 }
             }
 
