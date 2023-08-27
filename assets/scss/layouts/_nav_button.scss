@@ -4,7 +4,6 @@
 
 #nav_bar {
     position: absolute;
-    // display: none;
     right: 25px;
     top: 22px;
     height: 400px;
@@ -14,10 +13,9 @@
     background-color: rgba(9, 75, 114, 0.591);
     z-index: 999;
     backdrop-filter: blur(10px);
-    transition: transform 0.7s ease-in-out;
+    transition: transform 0.4s ease-in-out;
 
     &.active_nav {
-        // display: inline-block;
         right: 25px;
         transform: scale(1);
     }
@@ -41,7 +39,7 @@
             margin: 50px 30px;
 
             a {
-                @include font($white, $poppins, 20px, normal, 400);
+                @include font($white, $poppins, 18px, normal, 400);
                 text-transform: uppercase;
 
             }
