@@ -16,7 +16,7 @@
                 // @include border(green);
 
                 @include custom_responsive(0px, 991.9px){
-                    
+                    width: auto;
                 }
             .news_div{
                 // @include border(green);
@@ -24,7 +24,6 @@
                 background-color: $news_div_bg;
                 width: 434px;
                 height: 40px;
-                flex-shrink: 0;
                 border-radius: 26.5px;
                 display: flex;
                 gap: 10px;
@@ -35,7 +34,12 @@
 
                 @include custom_responsive(0px, 991.9px){
                     margin-top: 10px;
-                }
+                };
+
+                @include custom_responsive(0px, 650px){
+                    width: unset;
+                    
+                 };
 
                 a{
                     // @include border(yellow);
@@ -44,8 +48,9 @@
                     width: 86px;
                     height: 28px;
                     flex-shrink: 0;
+                    display: flex;
                     text-align: center;
-                    
+                    justify-content: center;                
                     color: $white;
 
 
@@ -54,7 +59,8 @@
                 p{
 
                     @include font($news_text, $jakarta, 14px,
-                     normal, 400, )
+                     normal, 400, );
+
                 }
 
             }
@@ -65,15 +71,26 @@
                 letter-spacing: 1.8px;
                 width: 751px;
                 height: 216px;
+                display: inline-block;
                 
-                @include custom_responsive(0px, 1300px){
-                    width: 550px;
-                    font-size: 60px;
-                    line-height:90px;
-                    // letter-spacing: 0px;
-                    // height: 0px;
+                @include custom_responsive(0px, 767.9px){
+                    width: unset;
+                    font-size: 40px;
+                    line-height:40px;
+                    height: auto;
+                    // margin-bottom: 70px;
                    
                 }
+                @include custom_responsive(768px, 1299.9px){
+                    width: 534px;
+                    font-size: 40px;
+                    line-height: 50px;
+                    // letter-spacing: 0px;
+                    height: auto;
+                   
+                }
+                
+
             }
 
             .des_p{
@@ -84,9 +101,19 @@
                 line-height: 37.92px;
                 letter-spacing: .5px;
 
-                @include custom_responsive(991px, 1300px){
-                    width: 400px;
-                    margin-top: 0px;
+                @include custom_responsive(0px, 767.9px){
+                    width: unset;
+                    font-size: 25px;
+                    // margin-top: 0;
+
+                    // line-height:60px;
+                    height: auto;
+                }
+
+                @include custom_responsive(768px, 1299.9px){
+                    width: 470px;
+                    height: auto;
+                    // margin-top: 0px;
                 }
             
             }
@@ -115,7 +142,7 @@
                 }
             }
 
-            .testimonial_pararaph{
+            .company_pararaph{
                 margin-top: 115px ;
                 height: 31px;
                 width: 540px;
@@ -125,6 +152,8 @@
 
                 @include custom_responsive(0px, 991.9px){
                     margin-top: 30px;
+                    width: auto;
+                    height: auto;
 
                 }
             }
@@ -224,11 +253,15 @@
                     justify-content: center;
                     align-items: center;
                     
-                    @include custom_responsive(0px, 991.9px){
+                    @include custom_responsive(767.9px, 991.9px){
                         width: 20vw;
                         height: 80px ;
                         bottom: -20px;
                         left: 75px;
+                    }
+
+                    @include custom_responsive(0px, 768px){
+                        display: none;
                     }
   
                     .lawyer_name{
