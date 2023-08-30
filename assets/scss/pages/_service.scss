@@ -10,6 +10,13 @@
         align-items: center;
         justify-content: center;
 
+        body.dark & {
+            filter: invert(100%);
+            >h5,p{
+                color: $white;
+            }
+        }
+
         @include custom_responsive(0px, 1140px){
             height: auto;
         }
@@ -53,6 +60,7 @@
                 @include custom_responsive(0px, 619.9px){
                     width: unset;
                     height: auto;
+                    text-align: center;
                 }
                 
                 h4{
@@ -132,7 +140,7 @@
                     h5{
 
                         @include font($p_text_deep, $playfair, 22px, normal, 700);
-                        line-height: 22px;
+                        line-height: 28px;
                         letter-spacing: 0.5px;
                     }
 

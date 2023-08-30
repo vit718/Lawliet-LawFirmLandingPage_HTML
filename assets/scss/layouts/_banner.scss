@@ -18,6 +18,14 @@
                 @include custom_responsive(0px, 991.9px){
                     width: auto;
                 }
+
+                body.dark & {
+                     > p,h1{
+                       color: $white;  
+                     }
+                     
+                 }
+
             .news_div{
                 // @include border(green);
 
@@ -32,12 +40,21 @@
                 margin-top: 94px;
                 margin-bottom: 16px;
 
+                body.dark & {
+                   background-color: $brand_light;
+                    >p{
+                      color: $white;  
+                    }
+                    
+                }
+
                 @include custom_responsive(0px, 991.9px){
                     margin-top: 10px;
                 };
 
                 @include custom_responsive(0px, 650px){
                     width: unset;
+                    height: auto;
                     
                  };
 
@@ -159,10 +176,15 @@
                 line-height: 30.91px;
                 letter-spacing: .88px;
 
+                body.dark & {
+                    color: $white;
+                }
+
                 @include custom_responsive(0px, 991.9px){
                     margin-top: 30px;
                     width: auto;
                     height: auto;
+                    font-size: 18px;
 
                 }
             }
@@ -191,6 +213,10 @@
                                 width: auto;
                                 height: 26px;
                                 flex-shrink: 0;
+
+                                body.dark & {  
+                                    filter: invert(100%);
+                                }
                             }
                         }
 
@@ -258,9 +284,19 @@
                     border-radius: 10px;
                     background: $white; 
                     display: flex;
+                    gap: 2px;
                     flex-direction: column;
-                    justify-content: center;
+                    text-align: center;
                     align-items: center;
+                    justify-content: center;
+
+                    body.dark & {
+                        background-color: $black;
+                        >h2,p{
+                          color: $white;  
+                        }
+                        
+                    }
                     
                     @include custom_responsive(767.9px, 991.9px){
                         width: 20vw;
@@ -274,20 +310,15 @@
                     }
   
                     .lawyer_name{
-                        
-                        width: 134px;
-                        height: 36px;
+                    
                         @include font($dim, $jakarta, 24px, normal,700);
                         line-height: 36px;                       
                         text-align: center;
-                        margin: 0;
                         
                     }
 
                     .designation{
-                        
-                        width: 74px;
-                        height: 36px;
+                    
                         @include font($designation, $jakarta, 16px, normal, 500);
                         text-align: center;
                         line-height: 36px;
@@ -299,6 +330,7 @@
             }
         }  
 
+        
         
         
     }

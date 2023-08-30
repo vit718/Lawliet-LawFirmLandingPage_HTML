@@ -21,6 +21,10 @@
 body{
     background-color: $ellipse;
     height: auto;
+
+    &.dark {
+        background-color: $dim;
+    }
 }
 
 .page_body{
@@ -30,6 +34,12 @@ body{
     width: 1440px;
     margin: auto;
     overflow: hidden;
+
+    body.dark & {
+        background-color: $black;
+    }
+
+
 
     @include custom_responsive(0px, 1399.9px){
         width: 90vw;
