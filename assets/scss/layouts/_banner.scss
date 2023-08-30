@@ -30,7 +30,7 @@
                 // @include border(green);
 
                 background-color: $news_div_bg;
-                width: 434px;
+                width: 454px;
                 height: 40px;
                 border-radius: 26.5px;
                 display: flex;
@@ -77,6 +77,7 @@
 
                     @include font($news_text, $jakarta, 14px,
                      normal, 400, );
+
 
                 }
 
