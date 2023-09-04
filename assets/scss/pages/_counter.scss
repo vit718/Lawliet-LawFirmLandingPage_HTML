@@ -12,13 +12,11 @@
     
     height: 376px;
     width: 100%;
-    background-color: $white;
+    background-color: $service_bg;
 
     body.dark &{
-
         background-color: $black;
     }
-
     @include custom_responsive(0px, 991.9px){
         height: 100%;
         width: 100%;
@@ -36,10 +34,15 @@
         justify-content: center;
         text-align: center;
 
+        body.dark &{
+            background-color: $heading_text;
+        }
         
         @include custom_responsive(0px, 767.9px){
+            height: auto;
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: column;
+            // flex-wrap: wrap;
             margin: 30px auto;
         }
 

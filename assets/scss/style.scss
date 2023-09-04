@@ -1,3 +1,9 @@
+@import "./abstracts/variables";
+@import "./components/buttons";
+@import "./mixins/responsive";
+@import "./mixins/mix_button";
+@import './mixins/common_mix';
+@import './mixins/font_mix';
 @import "./layouts/reset";
 @import "./layouts/headers";
 @import "./layouts/header_2";
@@ -10,16 +16,11 @@
 @import "./pages/contact";
 @import "./pages/service";
 @import "./pages/counter";
-@import "./abstracts/variables";
-@import "./components/buttons";
-@import "./mixins/responsive";
-@import "./mixins/mix_button";
-@import './mixins/common_mix';
-@import './mixins/font_mix';
+@import "./pages/testimonial";
 @import './layouts/nav_button';
 
 body{
-    background-color: $ellipse;
+    background-color: $dim;
     height: auto;
 
     &.dark {

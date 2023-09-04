@@ -1,1 +1,10 @@
-@import "../abstracts/variables";
+@import '../abstracts/variables';
+@import '../mixins/common_mix';
+@import '../mixins/responsive';
+
+#Contact_id{
+
+    height: 374px;
+    display: flex;
+    justify-content: space-between;
+}
