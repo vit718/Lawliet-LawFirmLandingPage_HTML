@@ -5,7 +5,7 @@
 
 #testimonial_id{
 
-        border: $border;
+        // border: $border;
         background-color: $service_bg;
         height: 550px;
 
@@ -28,9 +28,13 @@
                 font-size: 35px;
                 line-height: 45px;
             }
-            @include custom_responsive(0px, 899.9px){
+            @include custom_responsive(576px, 899.9px){
                 font-size: 30px;
                 line-height: 40px;
+            }
+            @include xs(){
+                font-size: 25px;
+                line-height: 0px;
             }
             
         }
@@ -121,7 +125,9 @@
 
                     img{
 
-                        
+                        body.dark &{
+                            filter: invert(100%);
+                        }
                     }
                 }
 

@@ -9,6 +9,7 @@
 @import "./layouts/header_2";
 @import "./layouts/footers";
 @import "./layouts/container";
+@import './layouts/nav_button';
 @import "./layouts/flex";
 @import "./layouts/banner";
 @import "./pages/index";
@@ -17,7 +18,7 @@
 @import "./pages/service";
 @import "./pages/counter";
 @import "./pages/testimonial";
-@import './layouts/nav_button';
+@import "./pages/about";
 
 body{
     background-color: $dim;
