@@ -96,7 +96,7 @@
                 gap: 32px;
 
                 @include custom_responsive(0px,575.9px){
-                    align-items: center;
+                    align-items: left;
                 }
 
                 h5{
