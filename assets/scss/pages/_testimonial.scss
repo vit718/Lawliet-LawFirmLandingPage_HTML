@@ -78,10 +78,11 @@
 
             .comment_box{
                 // border: $border;
+                position: relative;
                 height: 220px;
                 width: 540px;
                 border-radius: 10px;
-                box-shadow: 0px 2px 10px 3px rgba(180, 180, 180, 0.15);
+                box-shadow: 0px 2px 20px 2px rgba(180, 180, 180, 0.927);
                 background: $white;
                 padding: 32px;
 
@@ -110,6 +111,20 @@
                     @include custom_responsive(0px, 614.9px){
                         font-size: 13px;
                     }
+                }
+                .arrow{
+                    @include arrow($sq:25px,$bg:rgb(232, 191, 191),);                  
+                    position: absolute;
+                    left: 40%;
+                    bottom: -25px;
+                    @include custom_responsive(900px, 1250px){
+                    left: 99.9%;
+                    bottom:50%;    
+                    clip-path: polygon(100% 66%, 0 0, 100% 0);
+                    transform: rotate(180deg);                      
+                    }
+
+                    
                 }
                 
             }
