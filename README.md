@@ -1,6 +1,6 @@
 <h2>WELCOME TO LAWYER PORTFOLIO PROJECT</h2>
 
-<img src="./mockup/mock-lawyer-tn.png" alt="webpage-mockup-preview">
+<img src="https://nishathub.github.io/Lawyer-Landing-Page/mockup/mock-lawyer-tn.png" alt="webpage-mockup-preview">
 
 <P><b><u>Clear and Accessible Navigation: </u></b>The webpage features a well-organized navigation menu that allows users to easily access important sections of the website, including "contact," "testimonial," "about," and "terms." The menu is available both in the header and as a hidden navigation bar, which will appear in small devices, enhancing user accessibility.</P>
     
@@ -58,4 +58,3 @@
 <p><b>About Section: </b>"About" section provides information about the company, including links to various sections like "Product," "Company," and "Support."</p>
 <p><b>Footer: </b>The footer section contains copyright information and social media icons.</p> 
 
-These section names are based on the structural elements and content within the provided HTML code.
