@@ -104,10 +104,13 @@
 
                 }
 
-                ul{
+                .link_list{
                     display: flex;
                     gap: 12px;
                     flex-direction: column;
+                    @include custom_responsive(0px,767.9px){
+                        gap: 5px;
+                    }
 
                     a{
 

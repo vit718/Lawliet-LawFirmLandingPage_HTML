@@ -37,11 +37,10 @@
 
         .social_icons{
 
-            ul{
+            .icon_list{
                 // border: $border;
                 display: flex;
                 gap: 16px;
-
                 li{
 
                     a{
@@ -52,6 +51,10 @@
                         display: flex;
                         align-items: center;
                         justify-content: center;
+                        &:hover{
+                            background-color: $white;
+                            i{color: $brand_deep;}
+                        }
                         i{
                             font-size: 15px;
                             color: $white;
