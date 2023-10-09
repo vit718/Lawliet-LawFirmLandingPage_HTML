@@ -2,11 +2,11 @@
 
 <img src="./mockup/mock-lawyer-tn.png" alt="webpage-mockup-preview">
 
-<P><b>Clear and Accessible Navigation: </b>The webpage features a well-organized navigation menu that allows users to easily access important sections of the website, including "contact," "testimonial," "about," and "terms." The menu is available both in the header and as a hidden navigation bar, which will appear in small devices, enhancing user accessibility.</P>
+<P><b><u>Clear and Accessible Navigation: </u></b>The webpage features a well-organized navigation menu that allows users to easily access important sections of the website, including "contact," "testimonial," "about," and "terms." The menu is available both in the header and as a hidden navigation bar, which will appear in small devices, enhancing user accessibility.</P>
     
-<p><b>Engaging Banner: </b>The main banner section immediately captures visitors' attention with a compelling headline, "Your Solution Legal Consultancy." It effectively communicates the core message of the legal services offered. The inclusion of company logos from trusted clients adds credibility and trustworthiness to the law firm's services.</p>
+<p><b><u>Engaging Banner: </u></b>The main banner section immediately captures visitors' attention with a compelling headline, "Your Solution Legal Consultancy." It effectively communicates the core message of the legal services offered. The inclusion of company logos from trusted clients adds credibility and trustworthiness to the law firm's services.</p>
     
-<p><b>Service Highlights: </b>The webpage dedicates a section to highlight the various legal services provided by the firm, accompanied by descriptive icons. This feature helps visitors quickly understand the range of legal expertise available, from environmental law to corporate and commercial matters. Each service description provides essential information about potential legal challenges, demonstrating the firm's competence.</p>
+<p><b><u>Service Highlights: </u></b>The webpage dedicates a section to highlight the various legal services provided by the firm, accompanied by descriptive icons. This feature helps visitors quickly understand the range of legal expertise available, from environmental law to corporate and commercial matters. Each service description provides essential information about potential legal challenges, demonstrating the firm's competence.</p>
     
 <p>In summary, this lawyer landing page offers a seamless user experience with clear navigation, engaging visuals, and informative content. It aims to attract potential clients by showcasing the firm's expertise and credibility in handling a wide range of legal matters.</p>
 
@@ -45,7 +45,7 @@
     <li>Cross-browser Compatible</li>
 </ol>
 
-<h4>Brief overview of the sections</h4>
+<h3>Brief overview of the sections</h3>
 
 <p><b>Navigation Bar: </b>The top part of the code includes a navigation bar with links to "contact," "testimonial," "about," and "terms."</p> 
 <p><b>Header:</b>This section contains the website's header, which includes the website logo, a button to change the website mode, and a navigation menu. There are two versions of the header, one at the top and another below it.</p> 
